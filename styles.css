@@ -1,0 +1,121 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f7f7ff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3f52ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.auth-buttons .login {
+    background: #ffffff;
+    color: #3f52ff;
+    border: 1px solid #3f52ff;
+}
+
+.auth-buttons .signup {
+    background: #3f52ff;
+    color: #ffffff;
+}
+
+.ipo-section,
+.apply-ipo-section,
+.faq-section {
+    background: #ffffff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(63, 82, 255, 0.1);
+    padding: 20px;
+}
+
+.ipo-section h2,
+.apply-ipo-section h2,
+.faq-section h2 {
+    color: #3f52ff;
+}
+
+.ipo-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.ipo-card {
+    background: #f7f7ff;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.view-btn {
+    padding: 10px 20px;
+    background: #3f52ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-btn {
+    padding: 15px 25px;
+    background: #3f52ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 15px 0;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer {
+    display: none;
+    padding: 10px 0;
+}
