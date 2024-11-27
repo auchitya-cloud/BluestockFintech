@@ -1,121 +1,3348 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    background-color: #f7f7ff;
+.ipo-home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
 }
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+.ipo-home-ipo-home {
+  width: 100%;
+  height: 8370px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(246, 247, 255, 1);
 }
-
-.navbar {
-    background: #ffffff;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.ipo-home-faqfooter {
+  top: 3120px;
+  left: 58px;
+  width: 1825px;
+  height: 3528px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
 }
-
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #3f52ff;
+.ipo-home-faq {
+  top: 152px;
+  left: 8px;
+  width: 1817px;
+  height: 3376px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
 }
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.ipo-home-faq15 {
+  top: 3195px;
+  left: 43px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
 }
-
-.nav-links a {
-    text-decoration: none;
-    font-size: 16px;
-    color: #333;
+.ipo-home-text100 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 901px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
 }
-
-.auth-buttons button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
+.ipo-home-faq14 {
+  top: 2973px;
+  left: 32px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
 }
-
-.auth-buttons .login {
-    background: #ffffff;
-    color: #3f52ff;
-    border: 1px solid #3f52ff;
+.ipo-home-text101 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 1473px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
 }
-
-.auth-buttons .signup {
-    background: #3f52ff;
-    color: #ffffff;
+.ipo-home-faq13 {
+  top: 2751px;
+  left: 21px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
 }
-
-.ipo-section,
-.apply-ipo-section,
-.faq-section {
-    background: #ffffff;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(63, 82, 255, 0.1);
-    padding: 20px;
+.ipo-home-text102 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 1143px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
 }
-
-.ipo-section h2,
-.apply-ipo-section h2,
-.faq-section h2 {
-    color: #3f52ff;
+.ipo-home-faq12 {
+  top: 2529px;
+  left: 10px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
 }
-
-.ipo-cards {
-    display: flex;
-    gap: 20px;
+.ipo-home-text103 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 901px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
 }
-
-.ipo-card {
-    background: #f7f7ff;
-    border-radius: 10px;
-    padding: 20px;
-    flex: 1;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.ipo-home-faq11 {
+  top: 2307px;
+  left: 10px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
 }
-
-.view-btn {
-    padding: 10px 20px;
-    background: #3f52ff;
-    color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.ipo-home-text106 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 901px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
 }
-
-.apply-btn {
-    padding: 15px 25px;
-    background: #3f52ff;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
+.ipo-home-faq10 {
+  top: 2085px;
+  left: 10px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
 }
-
-.faq-item {
-    border-bottom: 1px solid #e1e1e1;
-    padding: 15px 0;
+.ipo-home-text107 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 901px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
 }
-
-.question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.ipo-home-faq9 {
+  top: 1863px;
+  left: 10px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
 }
-
-.answer {
-    display: none;
-    padding: 10px 0;
+.ipo-home-text108 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 901px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-faq8 {
+  top: 1641px;
+  left: 10px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
+}
+.ipo-home-text109 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 901px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-faq7 {
+  top: 1419px;
+  left: 10px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
+}
+.ipo-home-text110 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 901px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-faq6 {
+  top: 1197px;
+  left: 10px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
+}
+.ipo-home-text111 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 901px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-faq5 {
+  top: 975px;
+  left: 10px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
+}
+.ipo-home-text112 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 1239px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-faq4 {
+  top: 753px;
+  left: 5px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
+}
+.ipo-home-text113 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 901px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-faq3 {
+  top: 531px;
+  left: 0px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
+}
+.ipo-home-text114 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 901px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-faq2 {
+  top: 309px;
+  left: 0px;
+  width: 1774px;
+  height: 181px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
+}
+.ipo-home-text115 {
+  top: 45px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 901px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-faq1 {
+  top: 0px;
+  left: 10px;
+  width: 1774px;
+  height: 264.45306396484375px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(244, 243, 249, 1);
+}
+.ipo-home-text116 {
+  top: 110px;
+  left: 67px;
+  color: rgba(0, 0, 0, 1);
+  width: 1567px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text117 {
+  font-weight: 400;
+}
+.ipo-home-text120 {
+  top: 29px;
+  left: 72px;
+  color: rgba(0, 0, 0, 1);
+  width: 261px;
+  height: auto;
+  position: absolute;
+  font-size: 30px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text123 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text124 {
+  top: 60px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-ipoanalysis {
+  top: 2713px;
+  left: 989px;
+  width: 861px;
+  height: 326px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.ipo-home-text125 {
+  top: 95px;
+  left: 32px;
+  color: rgba(0, 0, 0, 1);
+  width: 558px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text131 {
+  top: 35px;
+  left: 32px;
+  color: rgba(0, 0, 0, 1);
+  width: 209px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text132 {
+  top: 156px;
+  left: 32px;
+  color: rgba(0, 0, 0, 1);
+  width: 455px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text138 {
+  top: 218px;
+  left: 34px;
+  color: rgba(0, 0, 0, 1);
+  width: 455px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text147 {
+  top: 120px;
+  left: 32px;
+  color: rgba(102, 114, 132, 1);
+  width: 137px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text151 {
+  top: 177px;
+  left: 32px;
+  color: rgba(102, 114, 132, 1);
+  width: 84px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text157 {
+  top: 239px;
+  left: 34px;
+  color: rgba(102, 114, 132, 1);
+  width: 84px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-iponews {
+  top: 2713px;
+  left: 58px;
+  width: 861px;
+  height: 326px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.ipo-home-text163 {
+  top: 77px;
+  left: 32px;
+  color: rgba(0, 0, 0, 1);
+  width: 455px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text168 {
+  top: 35px;
+  left: 32px;
+  color: rgba(0, 0, 0, 1);
+  width: 114px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text169 {
+  top: 144px;
+  left: 32px;
+  color: rgba(0, 0, 0, 1);
+  width: 455px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text174 {
+  top: 126px;
+  left: 32px;
+  color: rgba(102, 114, 132, 1);
+  width: 137px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text179 {
+  top: 182px;
+  left: 32px;
+  color: rgba(102, 114, 132, 1);
+  width: 84px;
+  height: auto;
+  position: absolute;
+  font-size: 12px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-dots1 {
+  top: 2659px;
+  left: 889px;
+  width: 150px;
+  height: 10px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-ellipse2181 {
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2191 {
+  top: 0px;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2201 {
+  top: 0px;
+  left: 40px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2211 {
+  top: 0px;
+  left: 60px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2221 {
+  top: 0px;
+  left: 80px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2231 {
+  top: 0px;
+  left: 100px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2241 {
+  top: 0px;
+  left: 120px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2251 {
+  top: 0px;
+  left: 140px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-newlisted1 {
+  top: 2053px;
+  left: 20px;
+  width: 1884px;
+  height: 593.4354858398438px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-text185 {
+  top: 33px;
+  left: 38px;
+  color: rgba(0, 0, 0, 1);
+  width: 942px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text191 {
+  left: 38px;
+  color: rgba(0, 0, 0, 1);
+  width: 144px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-viewallbtn1 {
+  top: 6px;
+  left: 1603px;
+  width: 135px;
+  height: 42px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(62, 81, 255, 1);
+}
+.ipo-home-text192 {
+  top: 9px;
+  left: 37px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-newlisted2 {
+  top: 111px;
+  left: 38px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-frame1stsec1 {
+  top: 0px;
+  left: 0px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-frame1stbox1 {
+  top: 0px;
+  left: 0px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.ipo-home-text193 {
+  top: 40px;
+  left: 166px;
+  color: rgba(70, 124, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text194 {
+  top: 175px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text195 {
+  top: 275px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text196 {
+  top: 275px;
+  left: 211px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text197 {
+  top: 275px;
+  left: 367px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text198 {
+  top: 175px;
+  left: 205px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text199 {
+  top: 211px;
+  left: 46px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text200 {
+  top: 311px;
+  left: 47px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text201 {
+  top: 311px;
+  left: 211px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text202 {
+  top: 211px;
+  left: 211px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text203 {
+  top: 211px;
+  left: 369px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text204 {
+  top: 311px;
+  left: 367px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text205 {
+  top: 175px;
+  left: 367px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-rectangle42891 {
+  top: 375px;
+  left: 47px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-rectangle42901 {
+  top: 375px;
+  left: 162px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-text206 {
+  top: 380px;
+  left: 89px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text207 {
+  top: 380px;
+  left: 196px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-image96 {
+  top: 30px;
+  left: 38px;
+  width: 94px;
+  height: 72px;
+  position: absolute;
+}
+.ipo-home-newlisted3 {
+  top: 111px;
+  left: 650px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-frame1stsec2 {
+  top: 0px;
+  left: 0px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-frame1stbox2 {
+  top: 0px;
+  left: 0px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.ipo-home-text208 {
+  top: 40px;
+  left: 166px;
+  color: rgba(70, 124, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text209 {
+  top: 175px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text210 {
+  top: 275px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text211 {
+  top: 275px;
+  left: 211px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text212 {
+  top: 275px;
+  left: 367px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text213 {
+  top: 175px;
+  left: 205px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text214 {
+  top: 211px;
+  left: 46px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text215 {
+  top: 311px;
+  left: 47px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text216 {
+  top: 311px;
+  left: 211px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text217 {
+  top: 211px;
+  left: 211px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text218 {
+  top: 211px;
+  left: 369px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text219 {
+  top: 311px;
+  left: 369px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text220 {
+  top: 175px;
+  left: 367px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-rectangle42892 {
+  top: 375px;
+  left: 47px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-rectangle42902 {
+  top: 375px;
+  left: 162px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-text221 {
+  top: 380px;
+  left: 89px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text222 {
+  top: 380px;
+  left: 196px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-image98 {
+  top: 2px;
+  left: 34px;
+  width: 110px;
+  height: 111px;
+  position: absolute;
+}
+.ipo-home-newlisted4 {
+  top: 111px;
+  left: 1262px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-frame1stsec3 {
+  top: 0px;
+  left: 0px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-frame1stbox3 {
+  top: 0px;
+  left: 0px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.ipo-home-text223 {
+  top: 40px;
+  left: 166px;
+  color: rgba(70, 124, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text224 {
+  top: 175px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text225 {
+  top: 275px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text226 {
+  top: 275px;
+  left: 211px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text227 {
+  top: 275px;
+  left: 367px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text228 {
+  top: 175px;
+  left: 205px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text229 {
+  top: 211px;
+  left: 46px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text230 {
+  top: 311px;
+  left: 47px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text231 {
+  top: 311px;
+  left: 211px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text232 {
+  top: 211px;
+  left: 211px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text233 {
+  top: 211px;
+  left: 369px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text234 {
+  top: 311px;
+  left: 368px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text235 {
+  top: 175px;
+  left: 367px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-rectangle42893 {
+  top: 375px;
+  left: 47px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-rectangle42903 {
+  top: 375px;
+  left: 162px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-text236 {
+  top: 380px;
+  left: 89px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text237 {
+  top: 380px;
+  left: 196px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-image97 {
+  top: 17px;
+  left: 31px;
+  width: 115px;
+  height: 116px;
+  position: absolute;
+}
+.ipo-home-vector1 {
+  top: 593.4353637695312px;
+  left: 1884px;
+  width: 21px;
+  height: 70px;
+  position: absolute;
+}
+.ipo-home-vector2 {
+  top: 523.142578125px;
+  left: 0px;
+  width: 21px;
+  height: 70px;
+  position: absolute;
+}
+.ipo-home-ongoing1 {
+  top: 1461px;
+  left: 61px;
+  width: 1697px;
+  height: 531px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-ongoing2 {
+  top: 81px;
+  left: 0px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.ipo-home-text238 {
+  top: 9px;
+  left: 159px;
+  color: rgba(70, 124, 255, 1);
+  width: 284px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text240 {
+  font-weight: 500;
+}
+.ipo-home-text243 {
+  top: 175px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text244 {
+  top: 275px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text245 {
+  top: 275px;
+  left: 221px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text246 {
+  top: 275px;
+  left: 386px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text247 {
+  top: 175px;
+  left: 231px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text248 {
+  top: 211px;
+  left: 46px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text249 {
+  top: 311px;
+  left: 47px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text250 {
+  top: 311px;
+  left: 221px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text251 {
+  top: 211px;
+  left: 221px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text252 {
+  top: 211px;
+  left: 386px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text253 {
+  top: 311px;
+  left: 386px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text254 {
+  top: 175px;
+  left: 387px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-rectangle42894 {
+  top: 375px;
+  left: 47px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-rectangle42904 {
+  top: 375px;
+  left: 162px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-text255 {
+  top: 380px;
+  left: 89px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-image95 {
+  top: 41px;
+  left: 39px;
+  width: 105px;
+  height: 105px;
+  position: absolute;
+}
+.ipo-home-text256 {
+  top: 380px;
+  left: 196px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text257 {
+  top: 33px;
+  color: rgba(0, 0, 0, 1);
+  width: 942px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text261 {
+  color: rgba(0, 0, 0, 1);
+  width: 144px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-viewallbtn2 {
+  top: 15px;
+  left: 1562px;
+  width: 135px;
+  height: 42px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(62, 81, 255, 1);
+}
+.ipo-home-text262 {
+  top: 9px;
+  left: 37px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-demataccount {
+  top: 914px;
+  left: 308px;
+  width: 1304px;
+  height: 497px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-rectangle4298 {
+  top: 26px;
+  left: 0px;
+  width: 1304px;
+  height: 471px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-select {
+  top: 44px;
+  left: 434px;
+  width: 403px;
+  height: 118px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-text263 {
+  top: 36px;
+  left: 140px;
+  color: rgba(30, 30, 30, 1);
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-rectangle14 {
+  top: 0px;
+  left: 0px;
+  width: 132px;
+  height: 118px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-dots2 {
+  top: 0px;
+  left: 584px;
+  width: 150px;
+  height: 10px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-ellipse2182 {
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2192 {
+  top: 0px;
+  left: 20px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2202 {
+  top: 0px;
+  left: 40px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2212 {
+  top: 0px;
+  left: 60px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2222 {
+  top: 0px;
+  left: 80px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2232 {
+  top: 0px;
+  left: 100px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2242 {
+  top: 0px;
+  left: 120px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-ellipse2252 {
+  top: 0px;
+  left: 140px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.ipo-home-text264 {
+  top: 174px;
+  left: 442px;
+  color: rgba(0, 0, 0, 1);
+  width: 447px;
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text265 {
+  top: 268px;
+  left: 44px;
+  color: rgba(0, 0, 0, 1);
+  width: 1216px;
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Light;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text266 {
+  font-weight: 300;
+}
+.ipo-home-viewallbtn3 {
+  top: 413.2584228515625px;
+  left: 521px;
+  width: 290px;
+  height: 45.7415771484375px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(62, 81, 255, 1);
+}
+.ipo-home-text269 {
+  top: 11.979936599731445px;
+  left: 63px;
+  color: rgba(255, 255, 255, 1);
+  width: 197px;
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-upcoming {
+  top: 227px;
+  left: 14px;
+  width: 1886px;
+  height: 606px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-vector3 {
+  top: 388px;
+  left: 0px;
+  width: 21px;
+  height: 40px;
+  position: absolute;
+}
+.ipo-home-vector4 {
+  top: 459px;
+  left: 1886px;
+  width: 21px;
+  height: 45px;
+  position: absolute;
+}
+.ipo-home-upcboxes {
+  top: 150px;
+  left: 49px;
+  width: 1794px;
+  height: 456px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-frame1stsec4 {
+  top: 0px;
+  left: 0px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-frame1stbox4 {
+  top: 0px;
+  left: 0px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.ipo-home-text270 {
+  top: 40px;
+  left: 166px;
+  color: rgba(70, 124, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text271 {
+  top: 175px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text272 {
+  top: 275px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text273 {
+  top: 275px;
+  left: 221px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text274 {
+  top: 275px;
+  left: 386px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text275 {
+  top: 175px;
+  left: 231px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text276 {
+  top: 211px;
+  left: 46px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text277 {
+  top: 311px;
+  left: 47px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text278 {
+  top: 311px;
+  left: 221px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text279 {
+  top: 211px;
+  left: 221px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text280 {
+  top: 211px;
+  left: 386px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text281 {
+  top: 311px;
+  left: 386px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text282 {
+  top: 175px;
+  left: 387px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-rectangle42895 {
+  top: 375px;
+  left: 47px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-rectangle42905 {
+  top: 375px;
+  left: 162px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-text283 {
+  top: 380px;
+  left: 89px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text284 {
+  top: 380px;
+  left: 196px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-images1 {
+  top: 89px;
+  left: 39px;
+  width: 110px;
+  height: 47px;
+  position: absolute;
+}
+.ipo-home-frame2ndbox {
+  top: 0px;
+  left: 626px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.ipo-home-text285 {
+  top: 40px;
+  left: 159px;
+  color: rgba(70, 124, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text286 {
+  top: 175px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text287 {
+  top: 275px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text288 {
+  top: 275px;
+  left: 221px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text289 {
+  top: 275px;
+  left: 386px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text290 {
+  top: 175px;
+  left: 231px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text291 {
+  top: 211px;
+  left: 46px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text292 {
+  top: 311px;
+  left: 47px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text293 {
+  top: 311px;
+  left: 221px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text294 {
+  top: 211px;
+  left: 221px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text295 {
+  top: 211px;
+  left: 386px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text296 {
+  top: 311px;
+  left: 386px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text297 {
+  top: 175px;
+  left: 387px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-rectangle42896 {
+  top: 375px;
+  left: 47px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-rectangle42906 {
+  top: 375px;
+  left: 162px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-text298 {
+  top: 380px;
+  left: 89px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text299 {
+  top: 380px;
+  left: 196px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-download1 {
+  top: 40px;
+  left: 47px;
+  width: 86px;
+  height: 86px;
+  position: absolute;
+}
+.ipo-home-frame3rdbox {
+  top: 6px;
+  left: 1252px;
+  width: 542px;
+  height: 450px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.ipo-home-text300 {
+  top: 34px;
+  left: 181px;
+  color: rgba(70, 124, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 24px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text301 {
+  top: 175px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text302 {
+  top: 275px;
+  left: 46px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text303 {
+  top: 275px;
+  left: 221px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text304 {
+  top: 275px;
+  left: 386px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text305 {
+  top: 175px;
+  left: 231px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text306 {
+  top: 211px;
+  left: 46px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text307 {
+  top: 311px;
+  left: 47px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text308 {
+  top: 311px;
+  left: 221px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text309 {
+  top: 211px;
+  left: 221px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text310 {
+  top: 211px;
+  left: 386px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text311 {
+  top: 311px;
+  left: 386px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text312 {
+  top: 175px;
+  left: 387px;
+  color: rgba(90, 88, 88, 1);
+  height: auto;
+  position: absolute;
+  font-size: 18px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-rectangle42897 {
+  top: 375px;
+  left: 47px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-rectangle42907 {
+  top: 375px;
+  left: 162px;
+  width: 105px;
+  height: 43px;
+  position: absolute;
+  border-radius: 15px;
+}
+.ipo-home-text313 {
+  top: 380px;
+  left: 89px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text314 {
+  top: 380px;
+  left: 196px;
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 22px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-download11 {
+  top: 22px;
+  left: 30px;
+  width: 135px;
+  height: 59px;
+  position: absolute;
+}
+.ipo-home-text315 {
+  top: 15px;
+  left: 47px;
+  color: rgba(0, 0, 0, 1);
+  width: 811px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-viewallbtn4 {
+  top: 1px;
+  left: 1609px;
+  width: 135px;
+  height: 42px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(62, 81, 255, 1);
+}
+.ipo-home-text321 {
+  top: 9px;
+  left: 37px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text322 {
+  left: 47px;
+  color: rgba(0, 0, 0, 1);
+  width: 144px;
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-heading {
+  top: 131px;
+  left: 61px;
+  width: 361px;
+  height: 72px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-text323 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text324 {
+  top: 48px;
+  color: rgba(0, 0, 0, 1);
+  width: 361px;
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Light;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-navbar {
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 124px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(255, 255, 255, 1);
+}
+.ipo-home-navbarlinks {
+  top: 45px;
+  left: 691.0000610351562px;
+  width: 620.9999389648438px;
+  height: 25px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-text328 {
+  left: 201px;
+  color: rgba(154, 154, 154, 1);
+  width: 93px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-text329 {
+  top: 2px;
+  left: 67.88421630859375px;
+  color: rgba(154, 154, 154, 1);
+  width: 108px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-media-menu {
+  top: 2px;
+  left: 0px;
+  width: 305.3946533203125px;
+  height: 23px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-polygon1 {
+  top: 11px;
+  left: 294px;
+  width: 11px;
+  height: 6px;
+  position: absolute;
+}
+.ipo-home-text330 {
+  color: rgba(154, 154, 154, 1);
+  width: 55px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-support-menu {
+  top: 2px;
+  left: 363px;
+  width: 85.9228515625px;
+  height: 23px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-text331 {
+  color: rgba(154, 154, 154, 1);
+  width: 77px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-arrow1 {
+  top: 15px;
+  left: 77.9228515625px;
+  width: 11px;
+  height: 1px;
+  position: absolute;
+}
+.ipo-home-text332 {
+  top: 2px;
+  left: 491.76556396484375px;
+  color: rgba(154, 154, 154, 1);
+  width: 88px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-newbtn {
+  top: 4px;
+  left: 582.9999389648438px;
+  width: 38px;
+  height: 16px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(62, 81, 255, 1);
+}
+.ipo-home-text333 {
+  left: 5.90911865234375px;
+  color: rgba(255, 255, 255, 1);
+  width: 31px;
+  height: auto;
+  position: absolute;
+  font-size: 11px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-navabarsign-in-up {
+  top: 37px;
+  left: 1521px;
+  width: 296.04443359375px;
+  height: 42px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+}
+.ipo-home-text334 {
+  top: 7px;
+  color: rgba(154, 154, 154, 1);
+  width: 59px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-sign-up-now-btn {
+  top: 0px;
+  left: 86.7152099609375px;
+  width: 153.82789611816406px;
+  height: 42px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(62, 81, 255, 1);
+}
+.ipo-home-text335 {
+  top: 7px;
+  left: 34.2847900390625px;
+  color: rgba(255, 255, 255, 1);
+  width: 108px;
+  height: auto;
+  position: absolute;
+  font-size: 15px;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-gripvertical {
+  top: 6.8271484375px;
+  left: 271.04443359375px;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+}
+.ipo-home-text336 {
+  top: 27px;
+  left: 196px;
+  color: rgba(30, 30, 30, 1);
+  width: 300px;
+  height: auto;
+  position: absolute;
+  font-size: 45px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.ipo-home-logo {
+  top: 37px;
+  left: 86px;
+  width: 85px;
+  height: 45px;
+  position: absolute;
 }
