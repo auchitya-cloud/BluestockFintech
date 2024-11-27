@@ -1,96 +1,1524 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPO Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 300vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
 
-<body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <h1 class="logo">BLUESTOCK</h1>
-            <ul class="nav-links">
-                <li><a href="#">IPO</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Analysis</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Learn</a></li>
-            </ul>
-            <div class="auth-buttons">
-                <button class="login">Login</button>
-                <button class="signup">Sign Up</button>
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="ipo-home-container">
+        <div class="ipo-home-ipo-home">
+          <div class="ipo-home-faqfooter">
+            <div class="ipo-home-faq">
+              <div class="ipo-home-faq15">
+                <span class="ipo-home-text100">
+                  How to apply more than one application in an IPO?
+                </span>
+              </div>
+              <div class="ipo-home-faq14">
+                <span class="ipo-home-text101">
+                  What is the minimum and maximum investment one could do in the
+                  HNI category?
+                </span>
+              </div>
+              <div class="ipo-home-faq13">
+                <span class="ipo-home-text102">
+                  Can one apply for an IPO from a sweep in/out saving bank
+                  account?
+                </span>
+              </div>
+              <div class="ipo-home-faq12">
+                <span class="ipo-home-text103">
+                  <span>How is IPO return calculated?</span>
+                  <br />
+                </span>
+              </div>
+              <div class="ipo-home-faq11">
+                <span class="ipo-home-text106">
+                  What is the procedure to withdraw from an IPO?
+                </span>
+              </div>
+              <div class="ipo-home-faq10">
+                <span class="ipo-home-text107">
+                  Can a minor apply in an IPO?
+                </span>
+              </div>
+              <div class="ipo-home-faq9">
+                <span class="ipo-home-text108">
+                  How one can apply in IPO’s offline?
+                </span>
+              </div>
+              <div class="ipo-home-faq8">
+                <span class="ipo-home-text109">
+                  How one can apply in IPO’s online?
+                </span>
+              </div>
+              <div class="ipo-home-faq7">
+                <span class="ipo-home-text110">
+                  Where do I get an IPO application form?
+                </span>
+              </div>
+              <div class="ipo-home-faq6">
+                <span class="ipo-home-text111">
+                  Is it mandatory to have a PAN number to apply in an IPO?
+                </span>
+              </div>
+              <div class="ipo-home-faq5">
+                <span class="ipo-home-text112">
+                  What is the difference between book building issue and fixed
+                  price issue?
+                </span>
+              </div>
+              <div class="ipo-home-faq4">
+                <span class="ipo-home-text113">
+                  What are the disadvantages of an IPO?
+                </span>
+              </div>
+              <div class="ipo-home-faq3">
+                <span class="ipo-home-text114">
+                  What is the benefit of an IPO?
+                </span>
+              </div>
+              <div class="ipo-home-faq2">
+                <span class="ipo-home-text115">How to invest in an IPO?</span>
+              </div>
+              <div class="ipo-home-faq1">
+                <span class="ipo-home-text116">
+                  <span class="ipo-home-text117">
+                    IPO or the Initial Public Offering is the first time a
+                    company issues its shares to the public. As an investor, you
+                    will now be able to subscribe for such shares, which was
+                    earlier open to only a specific lot of internal and
+                    institutional investors via opening a Demat account.
+                  </span>
+                  <br />
+                  <br />
+                </span>
+                <span class="ipo-home-text120">
+                  <span>What is an IPO?</span>
+                  <br />
+                </span>
+              </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- IPO Section -->
-    <section class="ipo-section">
-        <div class="container">
-            <h2>IPO</h2>
-            <p>Explore upcoming IPOs and find information about past IPOs.</p>
-            <div class="ipo-cards">
-                <div class="ipo-card">
-                    <h3>Navi AgriTech Ltd.</h3>
-                    <p>Price: ₹100-₹110</p>
-                    <p>Issue Size: ₹200 Cr</p>
-                    <button class="view-btn">View IPO</button>
-                </div>
-                <div class="ipo-card">
-                    <h3>SPAC Durable Ltd.</h3>
-                    <p>Price: ₹120-₹130</p>
-                    <p>Issue Size: ₹300 Cr</p>
-                    <button class="view-btn">View IPO</button>
-                </div>
-                <div class="ipo-card">
-                    <h3>IK Security Ltd.</h3>
-                    <p>Price: ₹90-₹100</p>
-                    <p>Issue Size: ₹150 Cr</p>
-                    <button class="view-btn">View IPO</button>
-                </div>
+            <span class="ipo-home-text123">Frequently Asked Questions?</span>
+            <span class="ipo-home-text124">
+              Find answers to common questions that come in your mind related to
+              IPO.
+            </span>
+          </div>
+          <div class="ipo-home-ipoanalysis">
+            <span class="ipo-home-text125">
+              <span>
+                Euphoria Infotech India coming with IPO to raise upto Rs 9.60
+                crore
+              </span>
+              <br />
+              <br />
+              <br />
+              <br />
+            </span>
+            <span class="ipo-home-text131">IPO Analysis</span>
+            <span class="ipo-home-text132">
+              <span>
+                EPACK Durable coming with IPO to raise upto Rs 662 crore
+              </span>
+              <br />
+              <br />
+              <br />
+              <br />
+            </span>
+            <span class="ipo-home-text138">
+              <span>Qualitek Labs coming with IPO to raise Rs 19.64 crore</span>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </span>
+            <span class="ipo-home-text147">
+              <br />
+              <span>18 Jan, 2:26PM</span>
+              <br />
+            </span>
+            <span class="ipo-home-text151">
+              <br />
+              <br />
+              <span>17 Jan, 4:52PM</span>
+              <br />
+              <br />
+            </span>
+            <span class="ipo-home-text157">
+              <br />
+              <br />
+              <span>17 Jan, 3:36PM</span>
+              <br />
+              <br />
+            </span>
+          </div>
+          <div class="ipo-home-iponews">
+            <span class="ipo-home-text163">
+              <br />
+              <span>Brainbees Solutions files DRHP with SEBI</span>
+              <br />
+              <br />
+            </span>
+            <span class="ipo-home-text168">IPO News</span>
+            <span class="ipo-home-text169">
+              <br />
+              <span>Gretex Share Broking files DRHP with SEBI</span>
+              <br />
+              <br />
+            </span>
+            <span class="ipo-home-text174">
+              <br />
+              <span>29 Dec, 2:48PM</span>
+              <br />
+              <br />
+            </span>
+            <span class="ipo-home-text179">
+              <br />
+              <br />
+              <span>22 Dec, 2:47PM</span>
+              <br />
+              <br />
+            </span>
+          </div>
+          <div class="ipo-home-dots1">
+            <img
+              src="public/external/ellipse2185055-54sa-200h.png"
+              alt="Ellipse2185055"
+              class="ipo-home-ellipse2181"
+            />
+            <img
+              src="public/external/ellipse2195055-cvq-200h.png"
+              alt="Ellipse2195055"
+              class="ipo-home-ellipse2191"
+            />
+            <img
+              src="public/external/ellipse2205055-1pyi-200h.png"
+              alt="Ellipse2205055"
+              class="ipo-home-ellipse2201"
+            />
+            <img
+              src="public/external/ellipse2215055-lu8p-200h.png"
+              alt="Ellipse2215055"
+              class="ipo-home-ellipse2211"
+            />
+            <img
+              src="public/external/ellipse2225055-o0a4-200h.png"
+              alt="Ellipse2225055"
+              class="ipo-home-ellipse2221"
+            />
+            <img
+              src="public/external/ellipse2235055-eryq-200h.png"
+              alt="Ellipse2235055"
+              class="ipo-home-ellipse2231"
+            />
+            <img
+              src="public/external/ellipse2245055-cjba-200h.png"
+              alt="Ellipse2245055"
+              class="ipo-home-ellipse2241"
+            />
+            <img
+              src="public/external/ellipse2255055-36mm-200h.png"
+              alt="Ellipse2255055"
+              class="ipo-home-ellipse2251"
+            />
+          </div>
+          <div class="ipo-home-newlisted1">
+            <span class="ipo-home-text185">
+              <span>
+                Companies that have been listed recently through an IPO. Find
+                their listing gains and returns here.
+              </span>
+              <br />
+              <br />
+              <br />
+              <br />
+            </span>
+            <span class="ipo-home-text191">New Listed</span>
+            <div class="ipo-home-viewallbtn1">
+              <span class="ipo-home-text192">View All</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Apply IPO Section -->
-    <section class="apply-ipo-section">
-        <div class="container">
-            <h2>Applying for this IPO?</h2>
-            <p>Use the steps provided to apply directly through your Demat account or manually by filling the forms available at your broker's office.</p>
-            <button class="apply-btn">View Application Steps</button>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <div class="question">
-                    <h3>What is an IPO?</h3>
-                    <button class="toggle">+</button>
+            <div class="ipo-home-newlisted2">
+              <div class="ipo-home-frame1stsec1">
+                <div class="ipo-home-frame1stbox1">
+                  <span class="ipo-home-text193">
+                    Jyoti CNC Automation Ltd.
+                  </span>
+                  <span class="ipo-home-text194">IPO PRICE</span>
+                  <span class="ipo-home-text195">LISTING DATE</span>
+                  <span class="ipo-home-text196">CMP</span>
+                  <span class="ipo-home-text197">CURRENT RETURN</span>
+                  <span class="ipo-home-text198">LISTING PRICE</span>
+                  <span class="ipo-home-text199">Rs 331</span>
+                  <span class="ipo-home-text200">2024-01-16</span>
+                  <span class="ipo-home-text201">Rs 455.75</span>
+                  <span class="ipo-home-text202">Rs 370</span>
+                  <span class="ipo-home-text203">11.78%</span>
+                  <span class="ipo-home-text204">37.69%</span>
+                  <span class="ipo-home-text205">LISTING GAIN</span>
+                  <img
+                    src="public/external/rectangle42895055-78p-200h.png"
+                    alt="Rectangle42895055"
+                    class="ipo-home-rectangle42891"
+                  />
+                  <img
+                    src="public/external/rectangle42905055-8tbp-200h.png"
+                    alt="Rectangle42905055"
+                    class="ipo-home-rectangle42901"
+                  />
+                  <span class="ipo-home-text206">RHP</span>
+                  <span class="ipo-home-text207">DRHP</span>
                 </div>
-                <div class="answer">
-                    <p>An IPO, or Initial Public Offering, is when a company issues its shares to the public for the first time.</p>
-                </div>
+                <img
+                  src="public/external/image965055-a7vf-200h.png"
+                  alt="image965055"
+                  class="ipo-home-image96"
+                />
+              </div>
             </div>
-            <div class="faq-item">
-                <div class="question">
-                    <h3>How to apply for an IPO?</h3>
-                    <button class="toggle">+</button>
+            <div class="ipo-home-newlisted3">
+              <div class="ipo-home-frame1stsec2">
+                <div class="ipo-home-frame1stbox2">
+                  <span class="ipo-home-text208">Innova Captab Ltd.</span>
+                  <span class="ipo-home-text209">IPO PRICE</span>
+                  <span class="ipo-home-text210">LISTING DATE</span>
+                  <span class="ipo-home-text211">CMP</span>
+                  <span class="ipo-home-text212">CURRENT RETURN</span>
+                  <span class="ipo-home-text213">LISTING PRICE</span>
+                  <span class="ipo-home-text214">Rs 448</span>
+                  <span class="ipo-home-text215">2023-12-29</span>
+                  <span class="ipo-home-text216">Rs 515</span>
+                  <span class="ipo-home-text217">Rs 452.1</span>
+                  <span class="ipo-home-text218">0.92%</span>
+                  <span class="ipo-home-text219">14.96%</span>
+                  <span class="ipo-home-text220">LISTING GAIN</span>
+                  <img
+                    src="public/external/rectangle42895055-dokd-200h.png"
+                    alt="Rectangle42895055"
+                    class="ipo-home-rectangle42892"
+                  />
+                  <img
+                    src="public/external/rectangle42905055-fb1-200h.png"
+                    alt="Rectangle42905055"
+                    class="ipo-home-rectangle42902"
+                  />
+                  <span class="ipo-home-text221">RHP</span>
+                  <span class="ipo-home-text222">DRHP</span>
+                  <img
+                    src="public/external/image985055-6d56-200w.png"
+                    alt="image985055"
+                    class="ipo-home-image98"
+                  />
                 </div>
-                <div class="answer">
-                    <p>You can apply online through your Demat account or manually by visiting a brokerage office.</p>
-                </div>
+              </div>
             </div>
+            <div class="ipo-home-newlisted4">
+              <div class="ipo-home-frame1stsec3">
+                <div class="ipo-home-frame1stbox3">
+                  <span class="ipo-home-text223">Azad Engineering Ltd.</span>
+                  <span class="ipo-home-text224">IPO PRICE</span>
+                  <span class="ipo-home-text225">LISTING DATE</span>
+                  <span class="ipo-home-text226">CMP</span>
+                  <span class="ipo-home-text227">CURRENT RETURN</span>
+                  <span class="ipo-home-text228">LISTING PRICE</span>
+                  <span class="ipo-home-text229">Rs 524</span>
+                  <span class="ipo-home-text230">2023-12-28</span>
+                  <span class="ipo-home-text231">Rs 663.25</span>
+                  <span class="ipo-home-text232">Rs 720</span>
+                  <span class="ipo-home-text233">37.4%</span>
+                  <span class="ipo-home-text234">26.57%</span>
+                  <span class="ipo-home-text235">LISTING GAIN</span>
+                  <img
+                    src="public/external/rectangle42895055-kztq-200h.png"
+                    alt="Rectangle42895055"
+                    class="ipo-home-rectangle42893"
+                  />
+                  <img
+                    src="public/external/rectangle42905055-5qio-200h.png"
+                    alt="Rectangle42905055"
+                    class="ipo-home-rectangle42903"
+                  />
+                  <span class="ipo-home-text236">RHP</span>
+                  <span class="ipo-home-text237">DRHP</span>
+                  <img
+                    src="public/external/image975055-wlgr-200w.png"
+                    alt="image975055"
+                    class="ipo-home-image97"
+                  />
+                </div>
+              </div>
+            </div>
+            <img
+              src="public/external/vector5055-8s7m.svg"
+              alt="Vector5055"
+              class="ipo-home-vector1"
+            />
+            <img
+              src="public/external/vector5055-kv7.svg"
+              alt="Vector5055"
+              class="ipo-home-vector2"
+            />
+          </div>
+          <div class="ipo-home-ongoing1">
+            <div class="ipo-home-ongoing2">
+              <span class="ipo-home-text238">
+                <br />
+                <span class="ipo-home-text240">
+                  Medi Assist Healthcare Services Ltd. IPO
+                </span>
+                <br />
+                <br />
+              </span>
+              <span class="ipo-home-text243">PRICE BAND</span>
+              <span class="ipo-home-text244">ISSUE SIZE</span>
+              <span class="ipo-home-text245">ISSUE TYPE</span>
+              <span class="ipo-home-text246">LISTING DATE</span>
+              <span class="ipo-home-text247">OPEN</span>
+              <span class="ipo-home-text248">Rs 218 - 230</span>
+              <span class="ipo-home-text249">640.05 Cr.</span>
+              <span class="ipo-home-text250">Book Built</span>
+              <span class="ipo-home-text251">2024-01-19</span>
+              <span class="ipo-home-text252">2024-01-23</span>
+              <span class="ipo-home-text253">2024-01-29</span>
+              <span class="ipo-home-text254">CLOSE</span>
+              <img
+                src="public/external/rectangle42895056-pqvv-200h.png"
+                alt="Rectangle42895056"
+                class="ipo-home-rectangle42894"
+              />
+              <img
+                src="public/external/rectangle42905056-ayj-200h.png"
+                alt="Rectangle42905056"
+                class="ipo-home-rectangle42904"
+              />
+              <span class="ipo-home-text255">RHP</span>
+              <img
+                src="public/external/image955056-cpwn-200h.png"
+                alt="image955056"
+                class="ipo-home-image95"
+              />
+              <span class="ipo-home-text256">DRHP</span>
+            </div>
+            <span class="ipo-home-text257">
+              <span>
+                Companies where the IPO investment process is started and will
+                be listed soon in the stock market for regular trading.
+              </span>
+              <br />
+              <br />
+            </span>
+            <span class="ipo-home-text261">Ongoing</span>
+            <div class="ipo-home-viewallbtn2">
+              <span class="ipo-home-text262">View All</span>
+            </div>
+          </div>
+          <div class="ipo-home-demataccount">
+            <img
+              src="public/external/rectangle42985056-7mf-1400w.png"
+              alt="Rectangle42985056"
+              class="ipo-home-rectangle4298"
+            />
+            <div class="ipo-home-select">
+              <span class="ipo-home-text263">BLUESTOCK</span>
+              <img
+                src="public/external/rectangle145056-hclc-200h.png"
+                alt="Rectangle145056"
+                class="ipo-home-rectangle14"
+              />
+            </div>
+            <div class="ipo-home-dots2">
+              <img
+                src="public/external/ellipse2185056-fog-200h.png"
+                alt="Ellipse2185056"
+                class="ipo-home-ellipse2182"
+              />
+              <img
+                src="public/external/ellipse2195056-ooqq-200h.png"
+                alt="Ellipse2195056"
+                class="ipo-home-ellipse2192"
+              />
+              <img
+                src="public/external/ellipse2205056-ep2-200h.png"
+                alt="Ellipse2205056"
+                class="ipo-home-ellipse2202"
+              />
+              <img
+                src="public/external/ellipse2215056-di49-200h.png"
+                alt="Ellipse2215056"
+                class="ipo-home-ellipse2212"
+              />
+              <img
+                src="public/external/ellipse2225056-3ag5-200h.png"
+                alt="Ellipse2225056"
+                class="ipo-home-ellipse2222"
+              />
+              <img
+                src="public/external/ellipse2235056-skdo-200h.png"
+                alt="Ellipse2235056"
+                class="ipo-home-ellipse2232"
+              />
+              <img
+                src="public/external/ellipse2245056-2pw8-200h.png"
+                alt="Ellipse2245056"
+                class="ipo-home-ellipse2242"
+              />
+              <img
+                src="public/external/ellipse2255056-dhld-200h.png"
+                alt="Ellipse2255056"
+                class="ipo-home-ellipse2252"
+              />
+            </div>
+            <span class="ipo-home-text264">Applying for this IPO?</span>
+            <span class="ipo-home-text265">
+              <span class="ipo-home-text266">
+                The way you compare &amp; invest in only the best IPO, let us
+                help you get started by comparing and selecting the best Demat
+                account. Open your Demat account now to apply for your favourite
+                IPO.
+              </span>
+              <br />
+              <br />
+            </span>
+            <div class="ipo-home-viewallbtn3">
+              <span class="ipo-home-text269">Open a Demat Account</span>
+            </div>
+          </div>
+          <div class="ipo-home-upcoming">
+            <img
+              src="public/external/vector5056-bqd8.svg"
+              alt="Vector5056"
+              class="ipo-home-vector3"
+            />
+            <img
+              src="public/external/vector5056-kdn.svg"
+              alt="Vector5056"
+              class="ipo-home-vector4"
+            />
+            <div class="ipo-home-upcboxes">
+              <div class="ipo-home-frame1stsec4">
+                <div class="ipo-home-frame1stbox4">
+                  <span class="ipo-home-text270">Nova Agritech Ltd.</span>
+                  <span class="ipo-home-text271">PRICE BAND</span>
+                  <span class="ipo-home-text272">ISSUE SIZE</span>
+                  <span class="ipo-home-text273">ISSUE TYPE</span>
+                  <span class="ipo-home-text274">LISTING DATE</span>
+                  <span class="ipo-home-text275">OPEN</span>
+                  <span class="ipo-home-text276">Rs 39 - 41</span>
+                  <span class="ipo-home-text277">143.81 Cr.</span>
+                  <span class="ipo-home-text278">Book Built</span>
+                  <span class="ipo-home-text279">2024-01-22</span>
+                  <span class="ipo-home-text280">2024-01-24</span>
+                  <span class="ipo-home-text281">2024-01-30</span>
+                  <span class="ipo-home-text282">CLOSE</span>
+                  <img
+                    src="public/external/rectangle42895056-iltj-200h.png"
+                    alt="Rectangle42895056"
+                    class="ipo-home-rectangle42895"
+                  />
+                  <img
+                    src="public/external/rectangle42905056-zmw-200h.png"
+                    alt="Rectangle42905056"
+                    class="ipo-home-rectangle42905"
+                  />
+                  <span class="ipo-home-text283">RHP</span>
+                  <span class="ipo-home-text284">DRHP</span>
+                  <img
+                    src="public/external/images15056-75j7-200h.png"
+                    alt="images15056"
+                    class="ipo-home-images1"
+                  />
+                </div>
+              </div>
+              <div class="ipo-home-frame2ndbox">
+                <span class="ipo-home-text285">EPACK Durable Ltd.</span>
+                <span class="ipo-home-text286">PRICE BAND</span>
+                <span class="ipo-home-text287">ISSUE SIZE</span>
+                <span class="ipo-home-text288">ISSUE TYPE</span>
+                <span class="ipo-home-text289">LISTING DATE</span>
+                <span class="ipo-home-text290">OPEN</span>
+                <span class="ipo-home-text291">Rs 218 - 230</span>
+                <span class="ipo-home-text292">640.05 Cr.</span>
+                <span class="ipo-home-text293">Book Built</span>
+                <span class="ipo-home-text294">2024-01-19</span>
+                <span class="ipo-home-text295">2024-01-23</span>
+                <span class="ipo-home-text296">2024-01-29</span>
+                <span class="ipo-home-text297">CLOSE</span>
+                <img
+                  src="public/external/rectangle42895056-g71t-200h.png"
+                  alt="Rectangle42895056"
+                  class="ipo-home-rectangle42896"
+                />
+                <img
+                  src="public/external/rectangle42905056-bys-200h.png"
+                  alt="Rectangle42905056"
+                  class="ipo-home-rectangle42906"
+                />
+                <span class="ipo-home-text298">RHP</span>
+                <span class="ipo-home-text299">DRHP</span>
+                <img
+                  src="public/external/download15056-6yr9-200h.png"
+                  alt="download15056"
+                  class="ipo-home-download1"
+                />
+              </div>
+              <div class="ipo-home-frame3rdbox">
+                <span class="ipo-home-text300">RK Swamy Ltd.</span>
+                <span class="ipo-home-text301">PRICE BAND</span>
+                <span class="ipo-home-text302">ISSUE SIZE</span>
+                <span class="ipo-home-text303">ISSUE TYPE</span>
+                <span class="ipo-home-text304">LISTING DATE</span>
+                <span class="ipo-home-text305">OPEN</span>
+                <span class="ipo-home-text306">Not Issued</span>
+                <span class="ipo-home-text307">Not Issued</span>
+                <span class="ipo-home-text308">Book Built</span>
+                <span class="ipo-home-text309">Not Issued</span>
+                <span class="ipo-home-text310">Not Issued</span>
+                <span class="ipo-home-text311">Not Issued</span>
+                <span class="ipo-home-text312">CLOSE</span>
+                <img
+                  src="public/external/rectangle42895057-mo3r-200h.png"
+                  alt="Rectangle42895057"
+                  class="ipo-home-rectangle42897"
+                />
+                <img
+                  src="public/external/rectangle42905057-rb6m-200h.png"
+                  alt="Rectangle42905057"
+                  class="ipo-home-rectangle42907"
+                />
+                <span class="ipo-home-text313">RHP</span>
+                <span class="ipo-home-text314">DRHP</span>
+                <img
+                  src="public/external/download115057-xvhf-200h.png"
+                  alt="download115057"
+                  class="ipo-home-download11"
+                />
+              </div>
+            </div>
+            <span class="ipo-home-text315">
+              <br />
+              <span>
+                Companies that have filed for an IPO with SEBI. Few details
+                might be disclosed by the companies later on.
+              </span>
+              <br />
+              <br />
+              <br />
+            </span>
+            <div class="ipo-home-viewallbtn4">
+              <span class="ipo-home-text321">View All</span>
+            </div>
+            <span class="ipo-home-text322">Upcoming</span>
+          </div>
+          <div class="ipo-home-heading">
+            <span class="ipo-home-text323">IPO</span>
+            <span class="ipo-home-text324">
+              <span>
+                Following is the list of companies for IPO as of today.
+              </span>
+              <br />
+              <br />
+            </span>
+          </div>
+          <div class="ipo-home-navbar">
+            <div class="ipo-home-navbarlinks">
+              <span class="ipo-home-text328">PRODUCTS</span>
+              <span class="ipo-home-text329">COMMUNITY</span>
+              <div class="ipo-home-media-menu">
+                <img
+                  src="public/external/polygon15057-6to.svg"
+                  alt="Polygon15057"
+                  class="ipo-home-polygon1"
+                />
+                <span class="ipo-home-text330">IPO</span>
+              </div>
+              <div class="ipo-home-support-menu">
+                <span class="ipo-home-text331">BROKERS</span>
+                <img
+                  src="public/external/arrow15057-din8.svg"
+                  alt="Arrow15057"
+                  class="ipo-home-arrow1"
+                />
+              </div>
+              <span class="ipo-home-text332">LIVE NEWS</span>
+              <div class="ipo-home-newbtn">
+                <span class="ipo-home-text333">NEW</span>
+              </div>
+            </div>
+            <div class="ipo-home-navabarsign-in-up">
+              <span class="ipo-home-text334">Sign In</span>
+              <div class="ipo-home-sign-up-now-btn">
+                <span class="ipo-home-text335">Sign Up Now</span>
+              </div>
+              <img
+                src="public/external/gripvertical5057-12t.svg"
+                alt="gripvertical5057"
+                class="ipo-home-gripvertical"
+              />
+            </div>
+            <span class="ipo-home-text336">BLUESTOCK</span>
+            <img
+              src="public/external/logo5057-1cob-200h.png"
+              alt="logo5057"
+              class="ipo-home-logo"
+            />
+          </div>
         </div>
-    </section>
-
-    <script src="script.js"></script>
-</body>
-
+      </div>
+    </div>
+  </body>
 </html>
